@@ -7,12 +7,35 @@
     android:orientation="vertical"
     tools:context=".about">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ABOUT PAGE"
-        android:textSize="30sp"
-        android:textColor="@color/black"/>
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_design">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT PAGE"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:fontFamily="@font/number"
+            android:background="#FF0303"
+            android:textAlignment="center"
+            android:textSize="250sp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>
