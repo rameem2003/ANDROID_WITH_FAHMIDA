@@ -7,58 +7,118 @@
     android:orientation="vertical"
     tools:context=".homepage">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="HOME PAGE"
-        android:textSize="30sp"
-        android:textColor="@color/black"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="HOME PAGE"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textColor="@color/black"/>-->
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RUN"
-        android:textSize="25sp"/>
+<!--    <Button-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="RUN"-->
+<!--        android:textSize="25sp"/>-->
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="Password"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:backgroundTint="#0974F4"
-        android:textColorHint="#FF0000"
-        android:inputType="textPassword"
-        android:visibility="gone"/>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:hint="Password"-->
+<!--        android:drawableStart="@drawable/baseline_lock_24"-->
+<!--        android:backgroundTint="#0974F4"-->
+<!--        android:textColorHint="#FF0000"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:visibility="gone"/>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        app:endIconTint="#FB0505"-->
+<!--        android:hint="Enter your name"-->
+<!--        app:hintTextColor="#FF0000">-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/input"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="text"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/getName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Get name"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="50sp"-->
+<!--        android:textColor="@color/black"/>-->
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        app:endIconTint="#FB0505"
-        android:hint="Enter your name"
-        app:hintTextColor="#FF0000">
+        android:hint="Enter first number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#FF0000"
+        app:helperTextEnabled="true"
+        app:endIconTint="#FF0000">
+
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input"
+            android:id="@+id/firstnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"/>
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#FF0000"
+        app:helperTextEnabled="true"
+        app:endIconTint="#FF0000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/secondnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/getName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get name"/>
+        android:layout_marginStart="20dp"
+        android:text="SUM"
+        android:id="@+id/sumBtn"/>
 
     <TextView
-        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:id="@+id/result"/>
+
+
 </LinearLayout>
